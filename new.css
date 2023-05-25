@@ -331,10 +331,6 @@
     .nav-header{
         font-size:18px;
         font-family: "Be virtnam pro" , sans-serif;
-        margin-left: -25px;
-    }
-    .nav-left{
-        margin-top: 0px;
-        gap:10px;
+        margin-left: -35px;
     }
 }
