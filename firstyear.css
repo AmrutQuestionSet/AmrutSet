@@ -26,6 +26,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    margin-bottom: 50px;
 }
 
 #background{
@@ -426,6 +427,9 @@
         position: relative;
         /* z-index: -10; */
     }
+    .navbar{
+        width: 95%;
+    }
 
     .circle1{
         position: absolute;
@@ -472,7 +476,8 @@
 
     #logo{
         height:80px;
-        width: 90px;
+        width: 80px;
+       margin-left: -20px;
     }
     #background{
         display: none;
@@ -504,6 +509,7 @@
        padding-top: 20px;
        margin: 0 auto;
     }
+
     
     .card {
 
@@ -518,14 +524,13 @@
         margin-right: 0;
         margin: 0 auto;
         margin-top: 30px;
-     
     }
 
     .sem-card {
         width: 260px;
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.138);
-        border-radius: 15px;
+        border-radius: 30px;
         border: 2px solid #ffffff30;
         display: flex;
         justify-content: center;
@@ -547,11 +552,13 @@
     }
     
     .insem{
+
         margin-left: 0px;
         text-align: center;
     }
     
     .semheader{
+        margin-top: 15px;
         font-size: 25px;
         text-align: center;
         border-bottom: 1px solid black;
@@ -561,11 +568,12 @@
     .insem ul{
         margin: 0px;
         margin-left: 0px;
-        margin-top: 10px;
-        font-size: 20px;
-        gap: 10px;
+        margin-top: 25px;
+        font-size: 18px;
+        gap: 15px;
         text-align: start;
         margin-left: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     .insem ul div{
@@ -595,9 +603,8 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-       
     }
-
+    
 }
 
 
