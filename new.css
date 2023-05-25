@@ -205,13 +205,15 @@
     }
 
     .navbar-section{
-        width:100vw;
+        width:115vw;
         margin: 0 auto;
         height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-left: -25px;
+        margin-right: px;
     }
 
     .nav-right{
