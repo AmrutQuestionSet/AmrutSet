@@ -45,7 +45,6 @@
 
 #logo{
     width:150px;
-
 }
 
 #amrut{
@@ -120,7 +119,10 @@
     flex-direction: row;
     align-items: center;
 }
-
+.middle #get{
+    font-size: 50px;
+    color: rgb(226, 43, 92);
+}
 
 .middle2{
 
@@ -133,6 +135,10 @@
     flex-wrap: wrap;
 }
 
+
+#dynamic span{
+    font-size: 45px;
+}
 /* .middle2 a{
     display: flex;
     align-items: center;
@@ -185,4 +191,133 @@
 .button:hover::before{
     transform: scalex(1);
     transition: all 0.4s;
+}
+
+
+@media(max-width:400px)
+{
+    .wrapper{
+    background-color: #050505;
+    }
+    #logo
+    {
+        width:100px;
+    }
+
+    .navbar-section{
+        width:100vw;
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-right{
+
+        display: none;
+    }
+
+    .nav-header{
+        font-size:25px;
+        font-family: "Be virtnam pro" , sans-serif;
+        margin-left: -10px;
+    }
+    .nav-left{
+        margin-top: 0px;
+    }
+
+
+    .display{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        margin-top: 50px;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        gap:10px;
+        justify-content: center;
+    }
+
+    .middle #get{
+        font-size: 40px;
+    }
+
+    .middle #dynamic{
+        font-size: 50px;
+        height:120px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #dynamic span{
+        font-size: 30px;
+    }
+
+    .middle2{
+
+        color:rgb(33, 7, 7);
+        display: flex;
+        flex-direction: row;
+        font-size:20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #background{
+        display: none;
+    }
+    .middle2{
+
+        color:rgb(33, 7, 7);
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+        font-size:30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .button{
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        background:linear-gradient(to right,#242323,#242424);
+        position:relative;
+        height:50px;
+        width:180px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        z-index: 1;
+        transform: scale(1.1);
+        border-radius: 10px;
+        cursor: pointer;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .button::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left:0;
+        bottom: 0;
+        transform-origin: center;
+        transform: scalex(0);
+        transition: all 1s;
+        z-index:-1;
+        border-radius: 10px;
+    }
+
+    
 }
