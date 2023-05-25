@@ -9,7 +9,18 @@
 .wrapper{
     width: 100vw;
     height: 100vh;
-  }
+}
+
+.circle1
+{
+    display: none;
+    scale:0;
+}
+
+.circle2{
+    display: none;
+    scale: 0;
+}
 
 .subwrapper{
     position: relative;
@@ -406,29 +417,189 @@
     z-index:1;
 }
 
-@media (max-width:1000px)
+@media (max-width:400px)
 {
-    #background{
-        height:800px;
+    .wrapper{
+        background-color: black;
+        margin-top: -10px;
+        overflow-x: hidden;
+        position: relative;
+        /* z-index: -10; */
     }
 
-}
+    .circle1{
+        position: absolute;
+        display: flex;
+        scale: 1;
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 3;
+        top: 190px;
+        left: 50px;
+        box-shadow: 0 0 100px #50ffad;
+        background: linear-gradient(-25deg, #192e3a, #184942);
+        animation: circle1Animate 15s infinite;
+    }
+    @keyframes circle1Animate {
+        50% {
+          left: 70%;
+          top: 110%;
+          scale: 1.11;
+        }
+      }
+      .circle2{
+        position: absolute;
+        display: flex;
+        scale: 1;
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 3;
+        top: 600px;
+        right: 50px;
+        box-shadow: 0 0 100px #50ffad;
+        background: linear-gradient(-25deg, #26495d, #20554d);
+        animation: circle1Animate2 15s infinite;
+    }
+    @keyframes circle1Animate2 {
+        50% {
+          right: 70%;
+          top: 900px;
+          scale: 1.11;
+        }
+      }
 
-@media (max-width:800px) {
     #logo{
-        height:0;
-        width: 0;
+        height:80px;
+        width: 90px;
     }
-    .navbar{
-        height:70px;
+    #background{
+        display: none;
+    }
+
+    .first-header{
+        font-size:27px
+    }
+
+    .nav-left h2{
+        font-size: 25px;
     }
     .nav-left{
         display: flex;
         align-items: center;
+    }
+    .nav-right {
+        display: none;
+    }
+    .navbar{
+        height:55px;
+        display: flex;
+        justify-content: center;
+        padding: 0 0;
+        margin-top: 10px;
+    }
 
+    .nav-section{
+       padding-top: 20px;
+       margin: 0 auto;
+    }
+    
+    .card {
+
+        /* padding-bottom:100px ; */
+        width: 260px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        color: rgb(255, 255, 255);
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+     
+    }
+
+    .sem-card {
+        width: 260px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.138);
+        border-radius: 15px;
+        border: 2px solid #ffffff30;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    .innertext {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        user-select: none;
+
+    }
+    .subheader{
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    
+    .insem{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .semheader{
+        font-size: 25px;
+        text-align: center;
+        border-bottom: 1px solid black;
+
+    } 
+    
+    .insem ul{
+        margin: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 20px;
+        gap: 10px;
+        text-align: start;
+        margin-left: 30px;
+    }
+
+    .insem ul div{
+        display: flex;
+        align-items: center;
+        gap:15px
+    }
+
+    .overlay{
+        z-index: -5;
+    }
+
+    .overlayactive{
+        opacity: 1;
+        z-index:8;
+    }
+
+    .modal{
+        position: fixed;
+        top:30%;
+        width:250px;
+        height: 350px;
+        box-shadow: 0 0 100px #a5adb151;
+    }
+    .modal .subjects{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+       
     }
 
 }
+
 
 @media (max-width:620px){
     .nav-right {
@@ -436,28 +607,3 @@
      }
 }
 
-@media(max-width:400px){
-    #logo{
-        height:0;
-        width: 0;
-    }
-    .navbar{
-        height:70px;
-        display: flex;
-        justify-content: center;
-        padding: 0 0;
-        margin-top: 10px;
-    }
-    .nav-left{
-        display: flex;
-        align-items: center;
-
-    }
-    .nav-right {
-       display: none;
-    }
-    #background{
-        height:800px;
-        width:400px;
-    }
-}
