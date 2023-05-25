@@ -331,4 +331,8 @@
         font-family: "Be virtnam pro" , sans-serif;
         margin-left: -25px;
     }
+    .nav-left{
+        margin-top: 0px;
+        gap:20px;
+    }
 }
