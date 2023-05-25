@@ -8,6 +8,8 @@
 
 .wrapper{
         position: relative;
+        overflow-x: hidden;
+        overflow-y:hidden ;
 }
 
 #background{
