@@ -222,7 +222,7 @@
     .nav-header{
         font-size:20px;
         font-family: "Be virtnam pro" , sans-serif;
-        margin-left: -20px;
+        margin-left: -25px;
     }
     .nav-left{
         margin-top: 0px;
@@ -320,4 +320,12 @@
     }
 
     
+}
+@media(max-width:320px)
+{
+    .nav-header{
+        font-size:18px;
+        font-family: "Be virtnam pro" , sans-serif;
+        margin-left: -25px;
+    }
 }
