@@ -228,6 +228,7 @@
     }
     .nav-left{
         margin-top: 0px;
+        gap:20px;
     }
 
 
@@ -329,16 +330,5 @@
         font-size:18px;
         font-family: "Be virtnam pro" , sans-serif;
         margin-left: -25px;
-    }
-    .navbar-section{
-        width:117vw;
-        margin: 0 auto;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-left: -25px;
-        margin-right: px;
     }
 }
