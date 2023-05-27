@@ -101,6 +101,7 @@
     
     /* padding-bottom:100px ; */
     width: 85%;
+    padding-bottom: 100px;
     margin: 0 auto;
     margin-top: 50px;
     display: flex;
@@ -275,13 +276,13 @@
 
 .modal4 div span{
     cursor: pointer;
+    
 }
 
 
 
 .modal4-active{
     scale:1;
-    z-index:10;
 }
 
 .modal5
@@ -312,7 +313,6 @@
 
 .modal5-active{
     scale:1;
-    z-index:10;
 }
 
 .modal6
@@ -343,7 +343,6 @@
 
 .modal6-active{
     scale:1;
-    z-index:10;
 }
 
 
@@ -432,7 +431,7 @@
     }
 
     .circle1{
-        position: absolute;
+        position: fixed;
         display: flex;
         scale: 1;
         width:50px;
@@ -442,34 +441,34 @@
         top: 190px;
         left: 50px;
         box-shadow: 0 0 100px #50ffad;
-        background: linear-gradient(-25deg, #192e3a, #184942);
+        background: linear-gradient(-25deg, #192e3a, #391849);
         animation: circle1Animate 15s infinite;
     }
     @keyframes circle1Animate {
         50% {
           left: 70%;
-          top: 110%;
+          top: 90%;
           scale: 1.11;
         }
       }
       .circle2{
-        position: absolute;
+        position: fixed;
         display: flex;
         scale: 1;
         width:50px;
         height: 50px;
         border-radius: 50%;
         z-index: 3;
-        top: 600px;
-        right: 50px;
-        box-shadow: 0 0 100px #50ffad;
-        background: linear-gradient(-25deg, #26495d, #20554d);
+        right: 70%;
+        top: 90%;
+        box-shadow: 0 0 100px #47b6ab;
+        background: linear-gradient(-25deg, #192e3a, #270d41);
         animation: circle1Animate2 15s infinite;
     }
     @keyframes circle1Animate2 {
         50% {
-          right: 70%;
-          top: 900px;
+            top: 190px;
+            right: 50px;
           scale: 1.11;
         }
       }
